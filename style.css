@@ -9,6 +9,11 @@ header {
     padding: 20px;
 }
 
+.info-Animais h2 {
+    display: flex;
+    gap: 20px;
+}
+
 .info-Animais .menu{
     background-color: black;
     color: white;
