@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.info-Animais .menu{
+    background-color: black;
+    color: white;
+    width: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.info-Animais .animais {
+    display: none;
+}
+
+.info-Animais .animais.open {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.info-Animais .animais ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.container {
+    border: solid 1px black;
+    height: 500px;
+    text-align: center;
+}
