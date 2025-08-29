@@ -3,6 +3,7 @@ const listaAnimais = document.querySelector('.animais');
 
 menu.addEventListener('click', () => {
     listaAnimais.classList.toggle('open');
+    menu.classList.toggle('open');
 })
 
 //===================================================

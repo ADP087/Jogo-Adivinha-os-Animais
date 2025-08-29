@@ -4,23 +4,43 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+body {
+    height: 100vh;
+    background-color: #E0F2F0;
+}
+
 header {
     text-align: center;
     padding: 20px;
+    background-color: #2A736A;
+}
+
+main {
+    margin-top: 20px;
+}
+
+
+/*==== MENU ANIMAIS ====*/
+.info-Animais {
+    font-size: 1.5rem;
 }
 
 .info-Animais h2 {
     display: flex;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
-.info-Animais .menu{
-    background-color: black;
-    color: white;
+.info-Animais .menu {
     width: 30px;
-    font-size: 1.5rem;
     cursor: pointer;
     user-select: none;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.info-Animais .menu.open {
+    transform: rotate(180deg);
 }
 
 .info-Animais .animais {
@@ -39,8 +59,39 @@ header {
     padding-left: 0;
 }
 
+
+/*==== PARTE DO JOGO ====*/
 .container {
-    border: solid 1px black;
+    background-color: #8BC7C0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 500px;
+    width: 80vh;
+    margin: auto;
+    gap: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px black;
+}
+
+.container h4 {
+    font-size: 2rem;
     text-align: center;
+}
+
+.container button {
+    background-color: #0F4842;
+    color: white;
+    padding: 10px;
+    font-size: 1.3rem;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #02332D;
 }
